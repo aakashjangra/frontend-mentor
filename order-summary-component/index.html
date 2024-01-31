@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paleBlue: "hsl(225, 100%, 94%)",
+            brightBlue: "hsl(245, 75%, 52%)",
+            veryPaleBlue: "hsl(225, 100%, 98%)",
+            desatBlue: "hsl(224, 23%, 55%)",
+            darkBlue: "hsl(223, 47%, 23%)",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="bg-paleBlue h-screen w-screen flex justify-center items-center bg-[url(./images//pattern-background-mobile.svg)] bg-no-repeat sm:bg-[url(./images//pattern-background-desktop.svg)] ">
+    <!-- <div class="absolute top-0 right-0 h-[60%] w-[50%] bg-paleBlue"></div>
+    <div class="absolute bottom-0 left-0 h-[60%] w-[50%] bg-desatBlue"></div>
+    <div class="absolute z-10 top-0 left-[-200px] rounded-b-[50%] h-[60%] w-8/12 bg-paleBlue"></div>
+    <div class="absolute bottom-0 right-[-200px] rounded-t-[50%] h-[88.5%] w-8/12 bg-desatBlue"></div> -->
+    <main class="h-max w-[85vw] sm:w-[40vw] xl:w-[25vw] rounded-2xl bg-white shadow-2xl">
+        <img class="h-auto w-full rounded-t-2xl" src="./images/illustration-hero.svg" alt="illustration-hero">
+        <div class="h-[70%] w-full px-6 py-8 sm:px-10 flex flex-col items-center gap-3">
+
+          <h1 class="font-black text-xl drop-shadow-md">Order Summary</h1>
+          <p class="text-pretty text-center text-xs text-desatBlue leading-5 drop-shadow-sm">
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+          </p>
+
+          <div class="w-full px-5 py-4 text-xs flex justify-between bg-veryPaleBlue rounded-md">
+           
+            <div class="flex gap-4">
+
+              <img class="h-9 w-9" src="./images/icon-music.svg" alt="music icon">
+              
+              <div class="flex flex-col justify-between">
+                <span class="font-black">
+                  Annual Plan
+                </span>
+                <span class="text-desatBlue drop-shadow-sm">
+                  $59.99/year
+                </span>
+              </div>
+            </div>
+            <button class="text-brightBlue font-black underline text-[10px] hover:text-desatBlue hover:no-underline">
+              Change
+            </button>
+          </div>
+
+          <button class="text-white w-full h-10 my-2 rounded-lg text-xs font-bold bg-brightBlue shadow-lg shadow-desatBlue hover:opacity-70">
+            Proceed to Payment
+          </button>
+
+          <button class="text-desatBlue font-bold text-xs drop-shadow-md hover:text-black">
+            Cancel Order
+          </button>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
