@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   return (
     <div className=" bg-offBlack w-screen min-h-screen flex justify-center items-center">
-      <main className="h-full my-16 w-[80%] sm:h-[65%] sm:w-[19%] bg-darkGrey rounded-md flex flex-col justify-center items-center p-6 gap-3">
+      <main className="h-full my-16 w-[80%] sm:h-[65%] sm:w-[270px] bg-darkGrey rounded-md flex flex-col justify-center items-center p-6 gap-3">
         <img className='h-16 w-16 rounded-[50%]' src={MyImage} alt="picture of Akash" />
         <section className='flex flex-col gap-3'>
           <section className='flex flex-col items-center'>
