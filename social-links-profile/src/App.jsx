@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import MyImage from './assets/images/akash_pic.png'
+import MyImage from '/assets/images/akash_pic.png'
 import SocialLink from './components/SocialLink'
-import './App.css'
 
 function App() {
   return (
@@ -13,7 +11,7 @@ function App() {
             <h1 className="text-white text-lg">Akash</h1>
             <h2 className="text-green text-[0.6rem]">Haryana, India</h2>
           </section>
-          <h2 className="text-white text-[0.6rem] tracking-widest font-light">"Full Stack Developer"</h2>
+          <h2 className="text-white text-[0.6rem] tracking-widest font-light">&quot;Full Stack Developer&quot;</h2>
         </section>
 
         <section className='w-full flex flex-col gap-3 text-[0.6rem] tracking-wide font-normal'>  

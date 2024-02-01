@@ -1,8 +1,4 @@
-import './index.css'
-import React from 'react'
-
 const SocialLink = ({text, url}) => {
-  console.log(text, url)
 
   const redirectToUrl = () => {
     if(window?.location){
